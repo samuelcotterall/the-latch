@@ -33,6 +33,9 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
+	
+<script type="text/javascript" src="http://use.typekit.com/wye5tiw.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -63,7 +66,7 @@
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+				<div id="site-description"><?php # bloginfo( 'description' ); ?></div>
 
 				<?php
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one

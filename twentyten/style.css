@@ -337,17 +337,22 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	padding: 30px 0 0 0;
+	padding: 60px 0 60px 0;
 }
 #site-title {
 	float: left;
-	font-size: 30px;
-	line-height: 36px;
-	margin: 0 0 18px 0;
-	width: 700px;
+	font-size: 60px;
+	line-height: 60px;
+	letter-spacing: 1px;
+	margin: 0 auto 30px 0;
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'futura-pt';
+	
 }
 #site-title a {
-	color: #000;
+	color: #ab82b5;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -372,7 +377,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #000;
+	background: #ab82b5;
 	display: block;
 	float: left;
 	margin: 0 auto;
