@@ -392,31 +392,6 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER SYTLES
 *********************/
-.header-wrap {
-  width: 640px;
-  padding: 0 40px;
-  background: #fff;
-  margin: 0;
-  float: left;
-}
-#logo {
-  margin: 0!important;
-  padding: 40px 0 0 0;
-  clear: none;
-  display: inline-block;
-  float: left;
-}
-#description {
-  padding: 45px 0 35px 0;
-  margin: 0 0 0 10px;
-  font-size: 16px;
-  font-style: italic;
-  float: left;
-  clear: none;
-  line-height: 24px;
-  display: inline-block;
-  color: #9c9c9c;
-}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -625,20 +600,28 @@ SIDEBARS & ASIDES
 
 }
 .widget h4 {
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 14px;
-  line-height: 14px;
+  /*font-weight: normal; */
+
+  /*text-transform: uppercase;*/
+
+  /*letter-spacing: 2px;*/
+
+  /*font-size: 14px;*/
+
+  /*line-height: 14px; */
+
 }
 .widget ul li {
-  margin-bottom: 0.75em;
+  /*margin-bottom: 0.75em;*/
+
   /* deep nesting */
 
 }
 .widget ul li ul {
-  margin-top: 0.75em;
-  padding-left: 1em;
+  /*margin-top: 0.75em;*/
+
+  /*padding-left: 1em;*/
+
 }
 /* links widget */
 /* meta widget */

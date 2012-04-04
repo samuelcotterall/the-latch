@@ -176,8 +176,15 @@ HEADER SYTLES
 
 .header {}
 
+.header-wrap {width: 640px; padding: 0 40px; background: #fff; margin: 0; float: left; }
+
+	#logo {margin: 0!important; padding: 40px 0 0 0; clear: none; display: inline-block; float: left;}
+
 	#logo { font-size: 24px; letter-spacing: 1px; text-transform: uppercase;}
 	#logo a {color: #f2e69a;}
+
+	#description {padding: 45px 0 35px 0; margin: 0 0 0 10px; font-size: 16px; font-style: italic; float: left; clear: none; line-height: 24px; display: inline-block; color: #bdbdbd!important;}
+
   
 /*********************
 NAVIGATION STYLES
@@ -208,7 +215,8 @@ NAVIGATION STYLES
 					keep this file as small as possible!
 					*/
 					&:hover, &:focus {
-					
+				    background: transparent!important;
+            text-decoration: underline;	
 					}
 				}
 				
@@ -271,7 +279,7 @@ POSTS & CONTENT STYLES
 
     #main {
       background: #fff;
-      padding-top: 40px;
+      padding-top: 30px;
     } 
 	
 		.hentry {
@@ -811,22 +819,31 @@ SIDEBARS & ASIDES
 
 .sidebar {padding: 0!important; width: 220px;}
 
-  /*#searchform {clear: both; display: block;}*/
   #searchform label {display: none;}
-  #searchform #s {border: 1px solid #e1e1e1; color: #565656; width: 130px; padding: 3px 3px 2px 3px; font-size: 14px; line-height: 14px;}
+  #searchform #s {border: 1px solid #e1e1e1; color: #565656!important; width: 130px; padding: 4px 3px 3px 3px; font-size: 12px; line-height: 14px;}
   #searchform #searchsubmit {background: #F2E69A; border: 0; color: #565656;text-transform: uppercase; letter-spacing: 1px; font-size: 12px; line-height: 12px; display: inline-block!important; padding: 6px 5px 5px 5px!important;}
 
 	.widget {
 	  padding: 0!important;
+    h4 {
+      font-weight: normal; 
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 14px; 
+    }
 		ul {
 		
 			li {
-			
+        font-family: 'Arial';
+		    font-size: 12px;
+        line-height: 1.5;
+        margin: 0 0 2px 0!important;
 				&:first-child {}
 				
 				&:last-child {}
 				
-				a {}
+				a {text-decoration: none;}
 				
 				/* deep nesting */
 				ul {}
