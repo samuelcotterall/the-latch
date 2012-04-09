@@ -105,9 +105,13 @@ HEADER SYTLES
   padding: 0 40px;
   width: 640px;
 }
+#logo {
+  margin-bottom: 35px;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
+/*.nav {margin-top: 35px;}*/
 /* .menu is clearfixed inside mixins.less */
 .menu {
   /* end .menu ul */
@@ -122,14 +126,18 @@ NAVIGATION STYLES
 
 }
 .menu ul li {
-  float: left;
-  clear: none;
+  /*float: left;*/
+
+  /*clear: none;*/
+
   /*
 				plan your menus and drop-downs wisely.
 				*/
 
 }
 .menu ul li a {
+  /*padding: 10px 10px;*/
+
   /*
 					you can use hover styles here even though this size
 					has the possibility of bieng a mobile device.
@@ -408,6 +416,9 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER SYTLES
 *********************/
+#description {
+  display: block;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -439,6 +450,7 @@ NAVIGATION STYLES
 .menu ul li {
   float: left;
   position: relative;
+  clear: none;
   /*
 				plan your menus and drop-downs wisely.
 				*/
@@ -447,6 +459,7 @@ NAVIGATION STYLES
 
 }
 .menu ul li a {
+  padding: 0;
   border-bottom: 0;
   /*
 					you can use hover styles here even though this size
@@ -480,6 +493,7 @@ NAVIGATION STYLES
 }
 .menu ul li ul.sub-menu li a,
 .menu ul li ul.children li a {
+  padding: 0 0 0 0;
   padding-left: 10px;
   border-right: 0;
   display: block;

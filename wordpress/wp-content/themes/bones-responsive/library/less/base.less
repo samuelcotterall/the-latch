@@ -183,17 +183,18 @@ HEADER SYTLES
 	#logo { font-size: 24px; letter-spacing: 1px; text-transform: uppercase;}
 	#logo a {color: #f2e69a; }
 
-	#description {padding: 45px 0 35px 0; margin: 0 0 0 10px; font-size: 16px; font-style: italic; float: left; clear: none; line-height: 24px; display: inline-block; color: #bdbdbd!important;}
+	#description {padding: 45px 0 35px 0; margin: 0 0 0 10px; font-size: 16px; font-style: italic; float: left; clear: none; line-height: 24px; display: inline-block; color: #bdbdbd!important; display: none;}
 
   
 /*********************
 NAVIGATION STYLES
 *********************/
 
-.nav {}
+.nav {clear: both; width: 100%; padding-top: 35px;}
 
 	/* .menu is clearfixed inside mixins.less */
 	.menu {
+    clear: both;
 		margin: 0; 
    text-transform: uppercase;
     letter-spacing: 1px;
@@ -205,7 +206,7 @@ NAVIGATION STYLES
 					display: block;
 					text-decoration: none;
           margin-right: 20px;
-/*          padding: 10px 10px;
+/*          padding: 10px 0px;
           background-color: #eee;
           border-bottom: 1px solid #ccc; 
 */					

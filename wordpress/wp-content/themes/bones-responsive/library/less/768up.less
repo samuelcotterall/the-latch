@@ -111,15 +111,16 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER SYTLES
 *********************/
+
+#description {display: block;}
 /*********************
 NAVIGATION STYLES
 *********************/
 
 .nav {float: left; clear: both; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1; width: 100%; padding: 12px 0;}
-
 	/* .menu is clearfixed inside mixins.less */
 	.menu {
-
+  
     text-transform: uppercase;
     letter-spacing: 1px;
 
@@ -130,8 +131,9 @@ NAVIGATION STYLES
 			li {
 				float: left;
 				position: relative;
-				
+				clear: none;
 				a {
+          padding: 0;
 					border-bottom: 0;
 					
 					/*
@@ -161,6 +163,7 @@ NAVIGATION STYLES
 						
 					li {
 						a {
+              padding: 0 0 0 0;
 							padding-left: 10px;
 							border-right: 0;
 							display: block;
