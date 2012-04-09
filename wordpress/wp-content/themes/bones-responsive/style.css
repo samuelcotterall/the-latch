@@ -41,7 +41,8 @@ inside of media queries. We also do this so we can
 call this function in the ie.less file. Which means
 IE will get all the styles without any hefty work.
 */
-/* end of the function (DO NOT DELETE) *//******************************************************************
+/* end of the function (DO NOT DELETE) */
+/******************************************************************
 Site Name: 
 Author: 
 
@@ -148,7 +149,13 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
+  .hentry {
+    padding: 0 30px;
+  }
   /* end .hentry */
+  .archive_title {
+    padding: 0 30px;
+  }
   /* want to style individual post classes? Booya! */
   /* post by id (i.e. post-3) */
   /* general post style */
@@ -164,17 +171,20 @@ you can add resource intensive styles.
     /* at this larger size, we can start to align images */
   
   }
-  .post-content .alignleft, .post-content img.alignleft {
+  .post-content .alignleft,
+  .post-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left;
   }
-  .post-content .alignright, .post-content img.alignright {
+  .post-content .alignright,
+  .post-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right;
   }
-  .post-content .aligncenter, .post-content img.aligncenter {
+  .post-content .aligncenter,
+  .post-content img.aligncenter {
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -463,10 +473,12 @@ you can add resource intensive styles.
   					*/
   
   }
-  .menu ul li a:hover, .menu ul li a:focus {
+  .menu ul li a:hover,
+  .menu ul li a:focus {
     background-color: #dedede;
   }
-  .menu ul li ul.sub-menu, .menu ul li ul.children {
+  .menu ul li ul.sub-menu,
+  .menu ul li ul.children {
     width: 200px;
     border: 1px solid #ccc;
     border-top: 0;
@@ -476,7 +488,8 @@ you can add resource intensive styles.
     /* highlight sub-menu current page */
   
   }
-  .menu ul li ul.sub-menu li, .menu ul li ul.children li {
+  .menu ul li ul.sub-menu li,
+  .menu ul li ul.children li {
     /*
   						if you need to go deeper, go nuts
   						just remember deeper menus suck
@@ -484,14 +497,16 @@ you can add resource intensive styles.
   						*/
   
   }
-  .menu ul li ul.sub-menu li a, .menu ul li ul.children li a {
+  .menu ul li ul.sub-menu li a,
+  .menu ul li ul.children li a {
     padding-left: 10px;
     border-right: 0;
     display: block;
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  .menu ul li ul.sub-menu li:last-child a, .menu ul li ul.children li:last-child a {
+  .menu ul li ul.sub-menu li:last-child a,
+  .menu ul li ul.children li:last-child a {
     border-bottom: 0;
   }
   .menu ul li:hover ul {
@@ -715,7 +730,8 @@ be set to display none.
     filter: none !important;
     -ms-filter: none !important;
   }
-  a, a:visited {
+  a,
+  a:visited {
     color: #444 !important;
     text-decoration: underline;
     /* show links on printed pages */
@@ -723,23 +739,29 @@ be set to display none.
     /* show title too */
   
   }
-  a:after, a:visited:after {
+  a:after,
+  a:visited:after {
     content: " (" attr(href) ")";
   }
-  a abbr[title]:after, a:visited abbr[title]:after {
+  a abbr[title]:after,
+  a:visited abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
     content: "";
   }
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
   thead {
     display: table-header-group;
   }
-  tr, img {
+  tr,
+  img {
     page-break-inside: avoid;
   }
   img {
@@ -748,11 +770,14 @@ be set to display none.
   @page  {
     margin: 0.5cm;
   }
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
   /* hide content people who print don't need to see */

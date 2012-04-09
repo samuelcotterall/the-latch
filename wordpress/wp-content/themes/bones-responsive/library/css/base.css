@@ -41,7 +41,9 @@ section {
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -112,7 +114,8 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
 }
 /* =============================================================================
@@ -133,7 +136,8 @@ abbr[title] {
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 blockquote {
@@ -181,7 +185,8 @@ q {
   quotes: none;
 }
 /* 2 */
-q:before, q:after {
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -192,7 +197,8 @@ small {
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -207,14 +213,16 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-ul, ol {
+ul,
+ol {
   margin-left: 0;
   padding: 0 0 0 40px;
 }
 dd {
   margin: 0 0 0 40px;
 }
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
   list-style-image: none;
 }
@@ -303,7 +311,8 @@ textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-button, input {
+button,
+input {
   line-height: normal;
   /* 1 */
 
@@ -332,7 +341,8 @@ input[type="submit"] {
  * 1. Addresses box sizing set to content-box in IE8/9
  * 2. Removes excess padding in IE8/9
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
 
@@ -364,7 +374,8 @@ input[type="search"]::-webkit-search-decoration {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -396,13 +407,16 @@ I added these extra styles as a more personalized reset. Feel free
 to remove them if you like or add your own. If you want to update
 the normalize styles, make sure to edit from this point up.
 ******************************************************************/
-ul, ol {
+ul,
+ol {
   padding: 0;
 }
 dd {
   margin: 0;
 }
-.sidebar ul, .sidebar ol, .commentlist {
+.sidebar ul,
+.sidebar ol,
+.commentlist {
   list-style: none;
 }
 /* proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens) */
@@ -412,13 +426,18 @@ p {
   -epub-hyphens: auto;
   hyphens: auto;
 }
-b, strong, .strong {
+b,
+strong,
+.strong {
   font-weight: bold;
 }
-dfn, em, .em {
+dfn,
+em,
+.em {
   font-style: italic;
 }
-small, .small {
+small,
+.small {
   font-size: 75%;
 }
 /* import mixins */
@@ -456,7 +475,8 @@ CLEARFIXIN'
 /* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */.clearfix {
   zoom: 1;
 }
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "";
   display: table;
 }
@@ -470,7 +490,8 @@ COLORS
 /*********************
 BUTTONS
 *********************/
-.button, .button:visited {
+.button,
+.button:visited {
   border: 1px solid #9cd5ef;
   border-top-color: #b6e0f3;
   border-left-color: #b6e0f3;
@@ -518,7 +539,8 @@ BUTTONS
   background-image: -ms-linear-gradient(top, #bfe4f4, #a9daf1);
   background-image: linear-gradient(top, #bfe4f4, #a9daf1);
 }
-.button:active, .button:visited:active {
+.button:active,
+.button:visited:active {
   background-color: #d5edf8;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bfe4f4), to(#d5edf8));
   background-image: -webkit-linear-gradient(top, #bfe4f4, #d5edf8);
@@ -673,7 +695,6 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 90%;
   margin: 0 auto;
 }
 /*
@@ -687,7 +708,8 @@ when we're ready for it.
 /*********************
 LINK STYLES
 *********************/
-a, a:visited {
+a,
+a:visited {
   color: #a5bfc1;
   /* on hover */
 
@@ -703,7 +725,8 @@ a:visited:focus {
   /*color: #a5bfc1;*/
 
 }
-a:link, a:visited:link {
+a:link,
+a:visited:link {
   /* 
 		this highlights links on iPhones/iPads. 
 		so it basically works like the :hover selector
@@ -747,24 +770,29 @@ h5 a,
 .h5 a {
   text-decoration: none;
 }
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5em;
   line-height: 1.333em;
 }
-h2, .h2 {
+h2,
+.h2 {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.125em;
 }
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
-h5, .h5 {
+h5,
+.h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
@@ -774,8 +802,7 @@ h5, .h5 {
 HEADER SYTLES
 *********************/
 .header-wrap {
-  width: 640px;
-  padding: 0 40px;
+  padding: 0 20px;
   background: #fff;
   margin: 0;
   float: left;
@@ -812,6 +839,8 @@ NAVIGATION STYLES
 /* .menu is clearfixed inside mixins.less */
 .menu {
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   /* end .menu ul */
 
 }
@@ -824,6 +853,7 @@ NAVIGATION STYLES
 
 }
 .menu ul li {
+  clear: both;
   /*
 				so you really have to rethink your dropdowns for mobile.
 				you don't want to have it expand too much because the
@@ -849,12 +879,15 @@ NAVIGATION STYLES
 					*/
 
 }
-.menu ul li a:hover, .menu ul li a:focus {
+.menu ul li a:hover,
+.menu ul li a:focus {
   background: transparent!important;
   text-decoration: underline;
 }
-.menu ul li ul.sub-menu li a, .menu ul li ul.children li a {
-  padding-left: 30px;
+.menu ul li ul.sub-menu li a,
+.menu ul li ul.children li a {
+  /*padding-left: 30px;*/
+
 }
 /* end .menu */
 /*********************
@@ -868,7 +901,7 @@ POSTS & CONTENT STYLES
   padding-top: 30px;
 }
 .hentry {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .hentry header {
   margin-left: 0;
@@ -878,7 +911,7 @@ POSTS & CONTENT STYLES
 }
 /* end .hentry */
 .archive_title {
-  padding: 0 30px;
+  padding: 0 20px;
 }
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -913,10 +946,12 @@ POSTS & CONTENT STYLES
   margin: 0 0 1.5em 0;
   max-width: 100%;
 }
-.post-content video, .post-content object {
+.post-content video,
+.post-content object {
   max-width: 100%;
 }
-.post-content pre, .post-content code {
+.post-content pre,
+.post-content code {
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px;
@@ -943,7 +978,8 @@ POSTS & CONTENT STYLES
 /* gallery caption styles *//******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-.page-navigation, .wp-prev-next {
+.page-navigation,
+.wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 .bones_page_navi {
@@ -972,7 +1008,8 @@ PAGE NAVI STYLES
   text-decoration: none;
   position: relative;
 }
-.bones_page_navi li a:hover, .bones_page_navi li a:focus {
+.bones_page_navi li a:hover,
+.bones_page_navi li a:focus {
   color: #b7b4a1;
   text-decoration: underline;
 }
@@ -985,10 +1022,12 @@ PAGE NAVI STYLES
   /* hovering on current page link */
 
 }
-.bones_page_navi li.bpn-prev-link, .bones_page_navi li.bpn-next-link {
+.bones_page_navi li.bpn-prev-link,
+.bones_page_navi li.bpn-next-link {
   font-weight: 700;
 }
-.bones_page_navi li.bpn-prev-link a, .bones_page_navi li.bpn-next-link a {
+.bones_page_navi li.bpn-prev-link a,
+.bones_page_navi li.bpn-next-link a {
   padding: 0;
 }
 .bones_page_navi li.bpn-prev-link a:hover,
@@ -1114,7 +1153,8 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-.commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
+.commentlist .comment-reply-link:hover,
+.commentlist .comment-reply-link:focus {
   opacity: 1;
 }
 /* end .commentlist */
@@ -1133,7 +1173,8 @@ COMMENT FORM STYLES
   clear: both;
   margin-bottom: 0.7335em;
 }
-.respond-form form li label, .respond-form form li small {
+.respond-form form li label,
+.respond-form form li small {
   display: none;
 }
 .respond-form form input[type=text],
@@ -1165,7 +1206,9 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-.respond-form form input[type=text], .respond-form form input[type=email], .respond-form form input[type=url] {
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }

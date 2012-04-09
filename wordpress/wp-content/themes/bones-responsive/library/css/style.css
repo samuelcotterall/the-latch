@@ -41,7 +41,8 @@ inside of media queries. We also do this so we can
 call this function in the ie.less file. Which means
 IE will get all the styles without any hefty work.
 */
-/* end of the function (DO NOT DELETE) *//******************************************************************
+/* end of the function (DO NOT DELETE) */
+/******************************************************************
 Site Name: 
 Author: 
 
@@ -60,7 +61,8 @@ inside of media queries. We also do this so we can
 call this function in the ie.less file. Which means
 IE will get all the styles without any hefty work.
 */
-/* end of the function (DO NOT DELETE) *//******************************************************************
+/* end of the function (DO NOT DELETE) */
+/******************************************************************
 Site Name: 
 Author: 
 
@@ -114,6 +116,10 @@ you can add resource intensive styles.
   HEADER SYTLES
   *********************/
   /*#inner-header {width: 745px; background: #fff; float: left;}*/
+  .header-wrap {
+    padding: 0 40px;
+    width: 640px;
+  }
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -131,6 +137,8 @@ you can add resource intensive styles.
   
   }
   .menu ul li {
+    float: left;
+    clear: none;
     /*
   				plan your menus and drop-downs wisely.
   				*/
@@ -147,7 +155,13 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
+  .hentry {
+    padding: 0 30px;
+  }
   /* end .hentry */
+  .archive_title {
+    padding: 0 30px;
+  }
   /* want to style individual post classes? Booya! */
   /* post by id (i.e. post-3) */
   /* general post style */
@@ -419,31 +433,6 @@ you can add resource intensive styles.
   /*********************
   HEADER SYTLES
   *********************/
-  .header-wrap {
-    width: 640px;
-    padding: 0 40px;
-    background: #fff;
-    margin: 0;
-    float: left;
-  }
-  #logo {
-    margin: 0!important;
-    padding: 40px 0 0 0;
-    clear: none;
-    display: inline-block;
-    float: left;
-  }
-  #description {
-    padding: 45px 0 35px 0;
-    margin: 0 0 0 10px;
-    font-size: 16px;
-    font-style: italic;
-    float: left;
-    clear: none;
-    line-height: 24px;
-    display: inline-block;
-    color: #9c9c9c;
-  }
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -641,7 +630,8 @@ you can add resource intensive styles.
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
-    margin-top: 00;
+    /*margin-top: 00;*/
+  
   }
   .widgettitle {
     /*    border-bottom: 2px solid #444;*/
@@ -650,24 +640,34 @@ you can add resource intensive styles.
   
   }
   .widget {
-    padding: 0 10px;
-    margin: 2.2em 0;
+    /*padding: 0 10px;*/
+  
+    /*margin: 2.2em 0;*/
+  
   }
   .widget h4 {
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    line-height: 14px;
+    /*font-weight: normal; */
+  
+    /*text-transform: uppercase;*/
+  
+    /*letter-spacing: 2px;*/
+  
+    /*font-size: 14px;*/
+  
+    /*line-height: 14px; */
+  
   }
   .widget ul li {
-    margin-bottom: 0.75em;
+    /*margin-bottom: 0.75em;*/
+  
     /* deep nesting */
   
   }
   .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
+    /*margin-top: 0.75em;*/
+  
+    /*padding-left: 1em;*/
+  
   }
   /* links widget */
   /* meta widget */

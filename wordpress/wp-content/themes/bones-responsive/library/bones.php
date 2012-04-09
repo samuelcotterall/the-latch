@@ -160,9 +160,9 @@ function bones_main_nav() {
 }
 
 function bones_footer_links() { 
-	// display the wp3 menu if available
-    wp_nav_menu(
-    	array(
+  // display the wp3 menu if available
+  wp_nav_menu(
+      array(
     		'menu' => 'footer_links', /* menu name */
     		'theme_location' => 'footer_links', /* where in the theme it's assigned */
     		'container_class' => 'footer-links clearfix', /* container class */
