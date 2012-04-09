@@ -19,7 +19,7 @@
 							</header> <!-- end article header -->
 						
 							<section class="post-content clearfix">
-								<?php the_content(_e('<span class="read-more">Read more on "'.the_title('', '', false).'" &raquo;</span>', "bonestheme")); ?>
+								<?php the_content(); ?>
 						
 							</section> <!-- end article section -->
 							

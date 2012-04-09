@@ -877,6 +877,9 @@ POSTS & CONTENT STYLES
   display: none;
 }
 /* end .hentry */
+.archive_title {
+  padding: 0 30px;
+}
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
 /* general post style */
@@ -1241,6 +1244,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
+  padding: 20px 0;
 }
 /*
 	if you checked out the link above:
@@ -1252,3 +1256,8 @@ FOOTER STYLES
 	view.
 	*/
 /* end .footer-links */
+.attribution {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #666;
+}
