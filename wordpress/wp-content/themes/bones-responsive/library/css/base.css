@@ -724,6 +724,7 @@ a:focus,
 a:visited:focus {
   /*color: #a5bfc1;*/
 
+  text-decoration: underline!important;
 }
 a:link,
 a:visited:link {
@@ -1254,8 +1255,7 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  padding: 0!important;
-  width: 220px;
+  padding: 30px;
 }
 #searchform label {
   display: none;
@@ -1305,7 +1305,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 /*
 	if you checked out the link above:

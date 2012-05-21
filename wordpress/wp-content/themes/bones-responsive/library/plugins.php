@@ -52,9 +52,9 @@ function bones_get_socialimage() {
 function bones_facebook_connect() {
 	echo "\n" . '<!-- facebook open graph stuff -->' . "\n";
 	echo '<!-- place your facebook app id below -->';
-	echo '<meta property="fb:app_id" content="1234567890"/>' . "\n";
+	echo '<meta property="fb:app_id" content="452867764739361"/>' . "\n";
 	global $post;	
-	echo '<meta property="og:site_name" content="'. get_bloginfo("name") .'"/>' . "\n";
+  echo '<meta property="og:site_name" content="'. get_bloginfo("name") .'"/>' . "\n";
 	echo '<meta property="og:url" content="'. get_permalink() .'"/>' . "\n";
 	echo '<meta property="og:title" content="'.get_the_title().'" />' . "\n";
 	if (is_singular()) {
@@ -78,7 +78,7 @@ function bones_google_header() {
 }
 	
 	// add this in the header 
-	add_action('wp_head', 'bones_facebook_connect');
+	//add_action('wp_head', 'bones_facebook_connect');
 	add_action('wp_head', 'bones_google_header');
 
 	

@@ -8,8 +8,33 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<title><?php wp_title(''); ?></title>
-        
+      <title><?php if (is_home () ) 
+{ 
+bloginfo('name'); 
+} 
+
+elseif ( is_category() )
+{ 
+single_cat_title(); echo ' | ' ; 
+bloginfo('name'); 
+}
+
+elseif (is_single() ) 
+{ 
+single_post_title(); 
+}
+
+elseif (is_page() ) 
+{ 
+bloginfo('name'); 
+echo ' | '; 
+single_post_title(); 
+}
+
+else 
+{ 
+wp_title('',true); 
+} ?></title>  
         <script type="text/javascript" src="http://use.typekit.com/wye5tiw.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		
@@ -23,8 +48,7 @@
 		
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-
-  		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
